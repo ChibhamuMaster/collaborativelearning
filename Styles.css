@@ -1,0 +1,360 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    overflow-x: hidden;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Header Styles */
+header {
+    background: #333;
+    color: white;
+    padding: 20px 0;
+    position: relative;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+header h2 {
+    font-size: 1.5rem;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.header-scroll {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* News Ticker Effect */
+@keyframes ticker {
+    0% {transform: translateX(100%);}
+    100% {transform: translateX(-100%);}
+}
+
+.header-scroll h2 {
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    position: absolute;
+    bottom: 5px;
+    animation: ticker 10s linear infinite;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: inline-block;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    border: 2px solid white;
+    background-color: #666;
+}
+
+/* Hero Section Styles */
+.hero {
+    background: url('background1.jpg') no-repeat center center/cover;
+    height: 400px;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-top: 150px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+.cta-button {
+    background-color: #ff5733;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #ff7843;
+    transform: scale(1.05);
+}
+
+/* Background Slide Transition */
+@keyframes backgroundTransition {
+    0% {background-image: url('education image.jpeg');}
+    33% {background-image: url('deliver-excellent-english-proofreading-typing-web-research (1).jpg');}
+    66% {background-image: url('istockphoto-1460745093-612x612.jpg');}
+    100% {background-image: url('cheetah-in-grass-stockcake.jpg');}
+}
+
+.hero {
+    animation: backgroundTransition 10s infinite;
+}
+
+/* Services Section */
+.services {
+    padding: 50px 0;
+    text-align: center;
+    background: #fff;
+}
+
+.services h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.service-item {
+    margin-bottom: 30px;
+}
+
+.service-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    font-size: 1rem;
+}
+
+.service-item:hover {
+    background-color: #eee;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+/* Testimonials Section */
+.testimonials {
+    background: #f9f9f9;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.testimonials h2 {
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.testimonial-item {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.testimonial-item p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.testimonial-item:hover {
+    background-color: #ddd;
+    transition: all 0.3s ease;
+}
+
+/* Contact Section */
+.contact {
+    background: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.contact form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact label {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact button {
+    background-color: #ff5733;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contact button:hover {
+    background-color: #ff7843;
+    transform: scale(1.05);
+}
+
+/* Login Section */
+.login {
+    background: #f9f9f9;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.login form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.login input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.login button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.login button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+/* Footer Section */
+footer {
+    background: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+footer ul li {
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Sidebar Styles */
+body {
+    overflow-x: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #333;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    overflow-y: scroll;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin: 20px 0;
+    font-weight: bold;
+    padding: 10px;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.sidebar a:hover {
+    background-color: #444;
+    border-color: white;
+}
+
+/* Bottom Scrollbar */
+.scrollbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background-color: #333;
+    overflow-x: scroll;
+}
+
+.scrollbar div {
+    width: 2000px; /* Adjust width as per content */
+    height: 20px;
+    background-color: #444;
+}
